@@ -4069,7 +4069,6 @@ ytmp4 => Video`, contextInfo: { forwardingScore: 508, isForwarded: true, externa
 						break
                             case 'play':		  
   if (args.length < 1) return fakegroup('Escribe el nombre')
-  fakegroup(mess.wait)
   playi = body.slice(6)
   anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=SatanicaXV`)
   buttons = [{buttonId: `video`,buttonText:{displayText: `Video`},type:1}]
@@ -4089,7 +4088,7 @@ quoted: mek, caption: infomp3 })
 mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek})
           break
 case 'video':  		  
-				  if (args.length < 1) return fakegroup('*y el texto xd?*')
+				  if (args.length < 1) return reply ('*y el texto xd?*')
                 alpha.sendMessage(from, mess.wait, text,{quoted : mek})
 				playi = args.join(" ")
 				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp4?q=${play}&apikey=SatanicaXV`)
