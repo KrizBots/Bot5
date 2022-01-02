@@ -2165,10 +2165,10 @@ case 'waifu':
               let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `𝗦𝗶𝗴𝘂𝗶𝗲𝗻𝘁𝗲 𝗪𝗮𝗶𝗳𝘂 🌿`},type:1}]
-              imageMsg = ( await cnf.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
+              imageMsg = ( await alpha.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
               buttonsMessage = {footerText:'*Kriz Edits*', imageMessage: imageMsg,
               contentText:`*Hermosa Waifu No?*`,buttons,headerType:4}
-              prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              prep = await alpha.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               alpha.relayWAMessage(prep)
               fs.unlinkSync(`./${sender}.jpeg`)
               break
