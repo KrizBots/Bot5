@@ -4089,16 +4089,16 @@ quoted: mek, caption: infomp3 })
 mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek})
           break
 case 'video':  		  
-				  if (args.length < 1) return ('*Ingrese el tÃ­tulo*')
+				  if (args.length < 1) return ('*Ingrese el tÃitulo*')
                 alpha.sendMessage(from, mess.wait, text,{quoted : mek})
 				playi = args.join(" ")
-				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp4?q=${playi}&apikey=oCHDwj8ggZGBGjU5WIaK5Rctu6c`)
+				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=SatanicaXV`)
 				if (anu.error) return fakegroup(anu.error)
-				infomp3 = `*VIDEO ENCONTRADO
+				infomp3 = `*VIDEO ENCONTRADO*
 
-𝗡𝗼𝗺𝗯𝗿𝗲 :  : ${anu.result.title}
-𝗘𝘅𝘁𝗲𝗻𝘀𝗶𝗼𝗻 : ${anu.result.source}
-𝗧𝗮𝗺𝗮ñ𝗼 : ${anu.result.size}
+*𝗡𝗼𝗺𝗯𝗿𝗲* :  : ${anu.result.title}
+*𝗘𝘅𝘁𝗲𝗻𝘀𝗶𝗼𝗻* : ${anu.result.source}
+*𝗧𝗮𝗺𝗮ñ𝗼* : ${anu.result.size}
 `			
 				buffer = await getBuffer(anu.result.thumbnail)
 				buffer1 = await getBuffer(anu.result.url_video)
