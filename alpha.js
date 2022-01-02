@@ -1146,6 +1146,14 @@ break
 case 'allmenu':
 reply (`Blanco`)
 break
+case 'shadowsky': 
+                    if (args.length < 1) return reply(`*Ejemplo :*\n${prefix}${command} Kriz`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://leyscoders-api.herokuapp.com/api/textmaker/shadow-sky?q=${makell}&apikey=MIMINGANZ`)
+					buffer1 = await getBuffer(anu.result.url)
+					alpha.sendMessage(from, buffer1, image, {quoted: mek})
+					break
 case 'funmenu':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 stamtus = `❏ 「 \`\`\`MENU FUN\`\`\` 」
@@ -1329,6 +1337,14 @@ stamtus = `❏ 「 \`\`\`MENU 18+\`\`\` 」
 ◈ ${prefix}blowjob
 ◈ ${prefix}awoo
 ◈ ${prefix}pack
+◈ ${prefix}husbu
+◈ ${prefix}avatar
+◈ ${prefix}stickpussy txt
+◈ ${prefix}stickneko txt
+◈ ${prefix}stickcum txt
+◈ ${prefix}stickbj txt
+◈ ${prefix}stickfeetg txt
+◈ ${prefix}padoru txt
 ────────────────────`
 buttons = [
 {buttonId:`downloadmenu`,buttonText:{displayText: '𝗠𝗲𝗻𝘂 𝗗𝗲𝘀𝗰𝗮𝗿𝗴𝗮𝘀 🌿'},type:1},
@@ -1455,41 +1471,44 @@ break
 case 'menulogos':
 stamtus =`❏ 「 \`\`\`MENU MAKER\`\`\` 」
 ────────────────────
-_contoh: ${prefix}tahta Lex4you_
-────────────────────
-◈ ${prefix}nulis 「 text 」
-◈ ${prefix}tahta 「 text 」
-◈ ${prefix}transformer 「 text 」
-◈ ${prefix}epepserti 「 text 」
-◈ ${prefix}logoff 「 text 」
-◈ ${prefix}maker3d 「 text 」
-◈ ${prefix}maker2d 「 text 」
-◈ ${prefix}cslogo 「 text 」
-◈ ${prefix}matrix 「 text 」
-◈ ${prefix}skytext 「 text 」
-◈ ${prefix}barcode 「 text 」
-◈ ${prefix}naruto 「 text 」
-◈ ${prefix}bneon 「 text 」
-◈ ${prefix}pubg 「 text 」
-◈ ${prefix}snow 「 text 」
-◈ ${prefix}cans 「 text 」
-◈ ${prefix}ganz 「 text 」
-◈ ${prefix}tfire 「 text 」
-◈ ${prefix}lithg 「 text 」
-◈ ${prefix}wall 「 text 」
-◈ ${prefix}dropair 「 text 」
-◈ ${prefix}wolf 「 text 」
-◈ ${prefix}flower 「 text 」
-◈ ${prefix}flame 「 text 」
-◈ ${prefix}gplay 「 text 」
-◈ ${prefix}splay 「 text 」
-◈ ${prefix}serti1 「 text 」
-◈ ${prefix}serti2 「 text 」
-◈ ${prefix}serti3 「 text 」
-◈ ${prefix}serti4 「 text 」
-◈ ${prefix}tomlol 「 text 」
-◈ ${prefix}logogx 「 text 」
-◈ ${prefix}logogb 「 text 」
+◈ ${prefix}nulis 「 txt 」
+◈ ${prefix}tahta 「 txt 」
+◈ ${prefix}transformer 「 txt 」
+◈ ${prefix}epepserti 「 txt 」
+◈ ${prefix}logoff 「 txt 」
+◈ ${prefix}maker3d 「 txt 」
+◈ ${prefix}maker2d 「 txt 」
+◈ ${prefix}cslogo 「 txt 」
+◈ ${prefix}matrix 「 txt 」
+◈ ${prefix}skytext 「 txt 」
+◈ ${prefix}barcode 「 txt 」
+◈ ${prefix}naruto 「 txt 」
+◈ ${prefix}bneon 「 txt 」
+◈ ${prefix}pubg 「 txt 」
+◈ ${prefix}snow 「 txt 」
+◈ ${prefix}cans 「 txt 」
+◈ ${prefix}ganz 「 txt 」
+◈ ${prefix}tfire 「 txt 」
+◈ ${prefix}lithg 「 txt 」
+◈ ${prefix}wall 「 txt 」
+◈ ${prefix}dropair 「 txt 」
+◈ ${prefix}wolf 「 txt 」
+◈ ${prefix}flower 「 txt 」
+◈ ${prefix}flame 「 txt 」
+◈ ${prefix}gplay 「 txt 」
+◈ ${prefix}splay 「 txt 」
+◈ ${prefix}serti1 「 txt 」
+◈ ${prefix}serti2 「 txt 」
+◈ ${prefix}serti3 「 txt 」
+◈ ${prefix}serti4 「 txt 」
+◈ ${prefix}tomlol 「 txt 」
+◈ ${prefix}logogx 「 txt 」
+◈ ${prefix}logogb 「 txt 」
+◈ ${prefix}pokemon txt
+◈ ${prefix}shadowsky txt 
+◈ ${prefix}love txt
+◈ ${prefix}ocean txt
+◈ ${prefix}wolf txt
 ────────────────────`
 buttons = [
 {buttonId:`owner`, buttonText: {displayText: '𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🌿'}, type: 1}
@@ -1636,6 +1655,14 @@ sticWait(from)
 goo = await getBuffer(huft.result.url)
 alpha.sendMessage(from, goo, image, {quoted: fvid, caption: 'Nih Ngab Cecan Vietnam🗿'})
 break
+case 'love': 
+                    if (args.length < 1) return reply(`*Ejemplo :*\n${prefix}${command} Kriz`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://nezuko-api.herokuapp.com/api/banners?banner=Lovemessage&text1=${makell}`)
+					buffer1 = await getBuffer(anu.result.image)
+					alpha.sendMessage(from, buffer1, image, {quoted: mek})
+					break
 case 'cecanrandom':
 ini = await fetchJson(`https://zeroyt7-api.herokuapp.com/api/asupan/cecan?apikey=${zerkey}`)
 sticWait(from)
@@ -1669,6 +1696,78 @@ const uiu =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','1
 uwu = fs.readFileSync(`./muslos/${xfjjjjjs}.jpg`);
 alpha.sendMessage(from, uwu, image, {quote: mek, caption: '7w7'})
 break
+case 'stickneko':
+case 'sneko':
+case 'nekostick':
+reply(mess.wait)
+try {
+      ranp = getRandom('.gif')
+      rano = getRandom('.webp')
+			anu = await axios.get('https://nekos.life/api/v2/img/nsfw_neko_gif')
+			exec(`wget ${anu.data.url} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
+			  fs.unlinkSync(ranp)
+				if (err) return reply('error')
+				buffer = fs.readFileSync(rano)
+				alpha.sendMessage(from, buffer, MessageType.sticker, {quoted: mek})
+				fs.unlinkSync(rano)
+			})
+			} catch {
+			 reply('Lo siento no pude realizar su pedido')
+			 }
+
+			break
+case 'stickbj':
+case 'stickblowbjob':
+case 'sbj':
+reply(mess.wait)
+try {
+      ranp = getRandom('.gif')
+      rano = getRandom('.webp')
+			anu = await axios.get('https://nekos.life/api/v2/img/bj')
+			exec(`wget ${anu.data.url} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
+			  fs.unlinkSync(ranp)
+				if (err) return reply('error')
+				buffer = fs.readFileSync(rano)
+				alpha.sendMessage(from, buffer, MessageType.sticker, {quoted: mek})
+				fs.unlinkSync(rano)
+			})
+			} catch {
+			 reply('Lo siento no pude realizar su pedido')
+			 }
+			break
+case 'stickfeetg':
+case 'sfeetg':
+case 'stickfeet':
+case 'feetg':
+reply(mess.wait)
+try {
+      ranp = getRandom('.gif')
+      rano = getRandom('.webp')
+			anu = await axios.get('https://nekos.life/api/v2/img/feetg')
+			exec(`wget ${anu.data.url} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
+			  fs.unlinkSync(ranp)
+				if (err) return reply('error')
+				buffer = fs.readFileSync(rano)
+				alpha.sendMessage(from, buffer, MessageType.sticker, {quoted: mek})
+				fs.unlinkSync(rano)
+			})
+	       } catch {
+			 reply('Lo siento no pude realizar su pedido')
+			 }
+			break
+case 'stickcum':
+case 'scum':
+      ranp = getRandom('.gif')
+      rano = getRandom('.webp')
+			anu = await axios.get('https://nekos.life/api/v2/img/cum')
+			exec(`wget ${anu.data.url} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
+			  fs.unlinkSync(ranp)
+				if (err) return reply('error')
+				buffer = fs.readFileSync(rano)
+				alpha.sendMessage(from, buffer, MessageType.sticker, {quoted: mek})
+				fs.unlinkSync(rano)
+			})	
+          break
 case 'bocil':
 
 ini = await fetchJson(`https://zeroyt7-api.herokuapp.com/api/asupan/bocil?apikey=${zerkey}`)
@@ -1676,6 +1775,21 @@ sticWait(from)
 buffer = await getBuffer(ini.result.url)
 alpha.sendMessage(from, buffer, video, {quoted: fvid, caption: '(≧▽≦)'})
 break
+case 'wolf':
+                   if (args.length < 1) return fakegroup(`Ejemplo :\n*${prefix}${command} Kriz*`)
+                   F = body.slice(6)
+                   
+                   anu = await getBuffer(`${ApiZeks}/api/wolflogo?apikey=${zeksApikey}&text1=zeeoneofc&text2=${F}`)
+                   alpha.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `Listo`, quoted: mek})
+                   break
+case 'ocean': 
+                    if (args.length < 1) return reply(`*Ejemplo :*\n${prefix}${command} Kriz`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://nezuko-api.herokuapp.com/api/banners?banner=Ocean&text1=${makell}`)
+					buffer1 = await getBuffer(anu.result.image)
+					alpha.sendMessage(from, buffer1, image, {quoted: mek})
+					break
 case 'ghea':
 
 ini = await fetchJson(`https://zeroyt7-api.herokuapp.com/api/asupan/ghea?apikey=${zerkey}`)
@@ -1683,6 +1797,14 @@ sticWait(from)
 buffer = await getBuffer(ini.result.url)
 alpha.sendMessage(from, buffer, video, {quoted: fvid, caption: '(≧▽≦)'})
 break
+case 'pokemon': 
+                    if (args.length < 1) return reply(`*Ejemplo :*\n${prefix}${command} Kriz`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://leyscoders-api.herokuapp.com/api/textmaker/pokemon?q=${makell}&apikey=MIMINGANZ`)
+					buffer1 = await getBuffer(anu.result.url)
+					alpha.sendMessage(from, buffer1, image, {quoted: mek})
+					break
 case  'awoo':
 if (!isGroup) return fakegroup('esta funcion es solo para grupos')
 
@@ -1711,6 +1833,13 @@ anu = await fetchJson(`https://waifu.pics/api/nsfw/neko`)
 buffer = await getBuffer(anu.url)
 alpha.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./thumb.jpg')})
 break
+case 'avatar':
+if (!isRegistered) return reply(ind.noregis())			  
+			anu = await axios.get('https://nekos.life/api/v2/img/avatar')
+				avatars = await getBuffer(anu.data.url)
+				alpha.sendMessage(from, avatars, image, {quoted: mek, caption: 'Linda foto no?' })
+			addFilter(from)
+          break
 case  'blowjob':
 if (!isGroup) return fakegroup('esta funcion es solo para grupos')
 
@@ -2031,15 +2160,18 @@ case 'darkjoke':
            }
            break
 case 'waifu':
-           try {
-           sticWait(from)
-           bo = args.join(' ')
-           waifu = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/waifu?apikey=${lolkey}`)
-           await alpha.sendMessage(from, waifu, image, { quoted:mek,caption:'Waifu Nih Ngab🗿' })
-           } catch(e) { 
-              reply(`${e}`)
-           }
-           break 
+          case 'husbu':
+              let wipu = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
+              let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
+              fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
+		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `ð‘†ð‘–ð‘”ð‘¢ð‘–ð‘’ð‘›ð‘¡ð‘’ ð‘¤ð‘Žð‘–ð‘“ð‘¢ ðŸ`},type:1}]
+              imageMsg = ( await cnf.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
+              buttonsMessage = {footerText:'*Kriz Edits*', imageMessage: imageMsg,
+              contentText:`*Hermosa Waifu No?*`,buttons,headerType:4}
+              prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              cnf.relayWAMessage(prep)
+              fs.unlinkSync(`./${sender}.jpeg`)
+              break
 case 'nswifu':
            try {
            sticWait(from)
@@ -4928,6 +5060,40 @@ mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek})
 							reply(`Responde ala imagen`)
 						}
 						break
+						case 'stickpussy':
+case 'spussy':
+case 'pussysticker':
+case 'stickerpussy':
+reply(mess.wait)
+try {
+       ranp = getRandom('.gif')
+      rano = getRandom('.webp')
+			anu = await axios.get('https://nekos.life/api/v2/img/pussy')
+			exec(`wget ${anu.data.url} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
+			  fs.unlinkSync(ranp)
+				if (err) return reply('error')
+				buffer = fs.readFileSync(rano)
+				alpha.sendMessage(from, buffer, MessageType.sticker, {quoted: mek})
+				fs.unlinkSync(rano)
+			})
+			 } catch {
+			 reply('Lo siento no pude realizar su pedido')
+			 }			
+			break
+case 'padoru':
+data = await fetchJson(`https://raw.githubusercontent.com/shadow578/Project-Padoru/master/padoru.json`, {
+method: 'get'
+})
+n = JSON.parse(JSON.stringify(data.Entries));
+nimek = n[Math.floor(Math.random() * n.length)];
+owo = (`${nimek.Image}`)
+ccf = ('https://raw.githubusercontent.com/shadow578/Project-Padoru/master/')
+pok = await getBuffer(`${ccf}${owo}`)
+alpha.sendMessage(from, pok, image, {
+quoted: mek, caption: `Nombre : ${nimek.Name}`
+})
+
+break
 					case 'stickerwm':
 					case 'swm':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
