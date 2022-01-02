@@ -2164,12 +2164,12 @@ case 'waifu':
               let wipu = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
               let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
-		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `ð‘†ð‘–ð‘”ð‘¢ð‘–ð‘’ð‘›ð‘¡ð‘’ ð‘¤ð‘Žð‘–ð‘“ð‘¢ ðŸ`},type:1}]
+		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `𝗦𝗶𝗴𝘂𝗶𝗲𝗻𝘁𝗲 𝗪𝗮𝗶𝗳𝘂 🌿`},type:1}]
               imageMsg = ( await cnf.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
               buttonsMessage = {footerText:'*Kriz Edits*', imageMessage: imageMsg,
               contentText:`*Hermosa Waifu No?*`,buttons,headerType:4}
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              cnf.relayWAMessage(prep)
+              alpha.relayWAMessage(prep)
               fs.unlinkSync(`./${sender}.jpeg`)
               break
 case 'nswifu':
