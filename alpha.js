@@ -2638,7 +2638,7 @@ break
 case 'googlesearch':
 case 'ggs':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('Yang mau di cari apaan?')
+if (args.length < 1) return reply('que es lo que buscas xd?')
 teks = args.join(' ')
 sticWait(from)
 res = await ggs({'query' : `${teks}`})
@@ -2689,20 +2689,8 @@ _File sedang dikirim, Silahkan tunggu beberapa menit_`
 reply(result)
 sendFileFromUrl(res[0].link, document, {mimetype: res[0].mime, filename: res[0].nama, quoted: mek})
 break
-				case 'cal':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-				 var mtk = body.slice(12)
-				 teks = `${mtk} = ${Math_js.evaluate(mtk)}`
-				 reply(teks)
-				 break
 				
-				
-				case 'dadu':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-			random = Math.floor(Math.random() * 6) + 1
-		damdu = fs.readFileSync(`./sticker/${random}.webp`)
-			alpha.sendMessage(from, damdu, sticker, {quoted: ftex})
-			break
+			
 				case 'robot':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 encmedial = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -4076,10 +4064,10 @@ ytmp4 => Video`, contextInfo: { forwardingScore: 508, isForwarded: true, externa
   if (anu.error) return fakegroup(anu.error)
   infomp3 = `*MUSICA ENCONTRADA*
 
-𝗡𝗼𝗺𝗯𝗿𝗲 : ${anu.result.title}
-𝗘𝘅𝘁𝗲𝗻𝘀𝗶𝗼𝗻: ${anu.result.source}
-𝗧𝗮𝗺𝗮ñ𝗼 : ${anu.result.size}
-𝗟𝗶𝗻𝗸 : ${anu.result.url_audio}
+*𝗡𝗼𝗺𝗯𝗿𝗲* : ${anu.result.title}
+*𝗘𝘅𝘁𝗲𝗻𝘀𝗶𝗼𝗻*: ${anu.result.source}
+*𝗧𝗮𝗺𝗮ñ𝗼* : ${anu.result.size}
+*𝗟𝗶𝗻𝗸* : ${anu.result.url_audio}
 `
   buffer = await getBuffer(anu.result.thumbnail)
   lagu = await getBuffer(anu.result.url_audio)
@@ -4089,10 +4077,10 @@ quoted: mek, caption: infomp3 })
 mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek})
           break
 case 'video':  		  
-				  if (args.length < 1) return ('*Ingrese el tÃitulo*')
+				  if (args.length < 1) return ('*Ingrese el titulo*')
                 alpha.sendMessage(from, mess.wait, text,{quoted : mek})
 				playi = args.join(" ")
-				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=SatanicaXV`)
+				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp4?q=${playi}&apikey=oCHDwj8ggZGBGjU5WIaK5Rctu6c`)
 				if (anu.error) return fakegroup(anu.error)
 				infomp3 = `*VIDEO ENCONTRADO*
 
