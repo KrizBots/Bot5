@@ -1089,7 +1089,7 @@ reply('http://youtube.com/c/LEX4YOUU')
         reply(su)
 				}
         switch (command) {
-case 'menu':
+case 'jsjsjkwlwjww':
 var z = '_'
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 quotesnya = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=KurrXd`)
@@ -1128,9 +1128,12 @@ await alpha.sendMessage(from, menuu, MessageType.buttonsMessage, {quoted: ftex})
 		break
 
 //FunMenu
-      case 'gay':
+      case 'joto':
       case 'lesby':
-
+     case 'puto':
+     case 'maricon':
+     case 'wapo':
+     
       if (!isGroup) return reply(mess.only.group)
         membr = []
         const pff = groupMembers
@@ -1142,7 +1145,33 @@ await alpha.sendMessage(from, menuu, MessageType.buttonsMessage, {quoted: ftex})
         mentions(teks, membr, true)
         break
 case 'allmenu':
-reply (`Blanco`)
+reply (`────────────────────
+◈ ${prefix}getpict [ @tag ]
+◈ ${prefix}getname [ reply target ]
+◈ ${prefix}getbio [ reply target ]
+◈ ${prefix}promote [ @tag ]
+◈ ${prefix}demote [ @tag ]
+◈ ${prefix}antilink [ on/off ]
+◈ ${prefix}antivirtex [ on/off ]
+◈ ${prefix}antiwame [ on/off ]
+◈ ${prefix}antibug [ on/off ]
+◈ ${prefix}welcome [ on/off ]
+◈ ${prefix}creategrup [ nama|@tag ]
+◈ ${prefix}tictactoe [ @tag ]
+◈ ${prefix}delttt
+◈ ${prefix}getpp
+◈ ${prefix}antiwame
+◈ ${prefix}getdeskgc
+◈ ${prefix}hacked [ teks ]
+◈ ${prefix}setnamegc [ texto ]
+◈ ${prefix}setdeskgc [ texto ]
+◈ ${prefix}opengc
+◈ ${prefix}closegc
+◈ ${prefix}resetlinkgc
+◈ ${prefix}linkgrup
+◈ ${prefix}hidetag [ texto ]
+◈ ${prefix}sticktag [ sticker ]
+
 break
 case 'shadowsky': 
                     if (args.length < 1) return reply(`*Ejemplo :*\n${prefix}${command} Kriz`)
@@ -1152,14 +1181,77 @@ case 'shadowsky':
 					buffer1 = await getBuffer(anu.result.url)
 					alpha.sendMessage(from, buffer1, image, {quoted: mek})
 					break
+					case 'puta'
+					case 'fea'
+      if (!isGroup) return reply(mess.only.group)
+        membr = []
+        const pff = groupMembers
+        const go = groupMembers
+        const goo = pff[Math.floor(Math.random() * pff.length)]
+        const oe = go[Math.floor(Math.random() * go.length)]
+        teks = `*la mas ${command}?*\n*Es * @${goo.jid.split('@')[0]}`
+        membr.push(goo.jid)
+        mentions(teks, membr, true)
+        break
 case 'funmenu':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-stamtus = `❏ 「 \`\`\`MENU FUN\`\`\` 」
+stamtus = `❏ 「 \`\`\`MENU\`\`\` 」
 ────────────────────
+ 「 \`\`\`DIVERSION\`\`\` 」
 ◈ ${prefix}feo
 ◈ ${prefix}puta
-◈ ${prefix}gay
+◈ ${prefix}joto
 ◈ ${prefix}lesbi
+◈ ${prefix}puto
+
+◈ ${prefix}maricon
+◈ ${prefix}fea
+◈ ${prefix}wapo
+「 \`\`\`GRUPO\`\`\` 」
+◈ ${prefix}getpict [ @tag ]
+◈ ${prefix}getname [ reply target ]
+◈ ${prefix}getbio [ reply target ]
+◈ ${prefix}promote [ @tag ]
+◈ ${prefix}demote [ @tag ]
+◈ ${prefix}antilink [ on/off ]
+◈ ${prefix}antivirtex [ on/off ]
+◈ ${prefix}antiwame [ on/off ]
+◈ ${prefix}antibug [ on/off ]
+◈ ${prefix}welcome [ on/off ]
+◈ ${prefix}creategrup [ nombre|@tag ]
+◈ ${prefix}tictactoe [ @tag ]
+◈ ${prefix}delttt
+◈ ${prefix}getpp
+◈ ${prefix}antiwame
+◈ ${prefix}getdeskgc
+◈ ${prefix}hacked [ teks ]
+◈ ${prefix}setnamegc [ texto ]
+◈ ${prefix}setdeskgc [ texto ]
+◈ ${prefix}opengc
+◈ ${prefix}closegc
+◈ ${prefix}resetlinkgc
+◈ ${prefix}linkgrup
+◈ ${prefix}hidetag [ texto ]
+◈ ${prefix}sticktag [ sticker ]
+
+「 \`\`\`+18 \`\`\` 」
+
+◈ ${prefix}waifu
+◈ ${prefix}hentai
+◈ ${prefix}neko
+◈ ${prefix}trapnime
+◈ ${prefix}blowjob
+◈ ${prefix}awoo
+◈ ${prefix}pack
+◈ ${prefix}husbu
+◈ ${prefix}avatar
+◈ ${prefix}stickpussy txt
+◈ ${prefix}stickneko txt
+◈ ${prefix}stickcum txt
+◈ ${prefix}stickbj txt
+◈ ${prefix}stickfeetg txt
+◈ ${prefix}padoru txt
+
 ────────────────────`
 buttons = [
 {buttonId:`nsfwmenu`,buttonText:{displayText: '𝗡𝘀𝗳𝘄 𝗠𝗲𝗻𝘂 🌿'},type:1},
@@ -1192,20 +1284,161 @@ stamtus = `❏ 「 \`\`\`MENU GROUP\`\`\` 」
 ◈ ${prefix}getpp
 ◈ ${prefix}antiwame
 ◈ ${prefix}getdeskgc
-◈ ${prefix}sider [ reply pesan bot ]
 ◈ ${prefix}hacked [ teks ]
-◈ ${prefix}setnamegc [ teks ]
-◈ ${prefix}setdeskgc [ teks ]
-◈ ${prefix}fitnah [ @tag|teks1|teks2 ]
-◈ ${prefix}kontak [ @tag|nama ]
-◈ ${prefix}kontag [ @tag|nama ]
+◈ ${prefix}setnamegc [ texto ]
+◈ ${prefix}setdeskgc [ texto ]
 ◈ ${prefix}opengc
 ◈ ${prefix}closegc
 ◈ ${prefix}resetlinkgc
 ◈ ${prefix}linkgrup
-◈ ${prefix}hidetag [ teks ]
-◈ ${prefix}sticktag [ nama sticker ]
-◈ ${prefix}totag [ reply media ]
+◈ ${prefix}hidetag [ texto ]
+◈ ${prefix}sticktag [ sticker ]
+
+◈ ${prefix}waifu
+◈ ${prefix}nsneko
+◈ ${prefix}wallnime
+◈ ${prefix}blekpink
+◈ ${prefix}lomli
+◈ ${prefix}nshentai
+◈ ${prefix}bigwibu
+◈ ${prefix}cecan
+◈ ${prefix}sagiri
+◈ ${prefix}hentai
+◈ ${prefix}neko
+◈ ${prefix}trapnime
+◈ ${prefix}blowjob
+◈ ${prefix}awoo
+◈ ${prefix}pack
+◈ ${prefix}husbu
+◈ ${prefix}avatar
+◈ ${prefix}stickpussy txt
+◈ ${prefix}stickneko txt
+◈ ${prefix}stickcum txt
+◈ ${prefix}stickbj txt
+◈ ${prefix}stickfeetg txt
+◈ ${prefix}padoru txt
+
+◈ ${prefix}serbot
+◈ ${prefix}autorespon
+◈ ${prefix}antidelete
+◈ ${prefix}tobc [  sticker ]
+◈ ${prefix}return [ javascript ]
+◈ ${prefix}clearall
+◈ ${prefix}delchat
+◈ ${prefix}mute
+◈ ${prefix}unmute
+◈ ${prefix}public
+◈ ${prefix}self
+◈ ${prefix}spam [ texto|cantidad ]
+◈ ${prefix}demoteall
+◈ ${prefix}promoteall
+◈ ${prefix}addcmd [ add cmd ]
+◈ ${prefix}delcmd [ del cmd]
+◈ ${prefix}listcmd
+◈ ${prefix}spamsw [ texto|cantidad ]
+◈ ${prefix}upswteks [ texto]
+◈ ${prefix}upswlokasi [ texto ]
+◈ ${prefix}upswaudio [ audio ]
+◈ ${prefix}upswvoice [  audio ]
+◈ ${prefix}upswsticker [ sticker ]
+◈ ${prefix}upswimage [ image ]
+◈ ${prefix}upswgif [ gif ]
+◈ ${prefix}upswvideo [ video ]
+◈ ${prefix}shutdown
+◈ ${prefix}offline
+◈ ${prefix}online
+◈ ${prefix}exif [ nombre|autor ]
+◈ ${prefix}setprofile [ imagen ]
+◈ ${prefix}setname [ texto ]
+◈ ${prefix}setprefix [ multi/nopref/prefix ]
+◈ ${prefix}setbio [ texto ]
+◈ ${prefix}leave
+◈ ${prefix}restart
+◈ ${prefix}addrespon [ Hola|respuesta ]
+◈ ${prefix}delrespon [ nombre ]
+◈ ${prefix}listrespon
+◈ ${prefix}readall
+◈ ${prefix}unreadall
+◈ ${prefix}archive
+◈ ${prefix}unarchiveall
+◈ ${prefix}pin
+◈ ${prefix}unpin
+◈ ${prefix}setmenu [ ori/simpel ]
+◈ ${prefix}setallmenu [ ori/simpel ]
+◈ ${prefix}leavetime [ detik/menit/jam ]
+◈ ${prefix}bukatime [ detik/menit/jam ]
+◈ ${prefix}tutuptime [ detik/menit/jam ]
+◈ ${prefix}nano [ nama file ]
+◈ ${prefix}google [ search ]
+◈ ${prefix}image [ search ]
+◈ ${prefix}wiki [ search ]
+◈ ${prefix}mediafire [ link ]
+◈ ${prefix}ytmp4 [ link yt ]
+◈ ${prefix}ytmp3 [ link yt ]
+◈ ${prefix}play [ texto]
+◈ ${prefix}tiktok [ link ]
+◈ ${prefix}video [ link video ]
+◈ ${prefix}tinyurl [ link ]
+◈ ${prefix}fetch [ link ]
+◈ ${prefix}igdl [ link ]
+◈ ${prefix}tiktokdl [ link ]
+◈ ${prefix}pinterest [ search ]
+◈ ${prefix}tourl [ reply image/video ]
+◈ ${prefix}cuaderno 「 txt 」
+◈ ${prefix}matrix 「 txt 」
+◈ ${prefix}barcode 「 txt 」
+◈ ${prefix}bneon 「 txt 」
+◈ ${prefix}cans 「 txt 」
+◈ ${prefix}ganz 「 txt 」
+◈ ${prefix}tfire 「 txt 」
+◈ ${prefix}lithg 「 txt 」
+◈ ${prefix}wall 「 txt 」
+◈ ${prefix}dropair 「 txt 」
+◈ ${prefix}wolf 「 txt 」
+◈ ${prefix}serti1 「 txt 」
+◈ ${prefix}serti2 「 txt 」
+◈ ${prefix}serti3 「 txt 」
+◈ ${prefix}serti4 「 txt 」
+◈ ${prefix}tomlol 「 txt 」
+◈ ${prefix}text3d  txt
+◈ ${prefix}shadowsky txt 
+◈ ${prefix}ocean txt
+◈ ${prefix}wolf txt
+◈ ${prefix}caripesan [ teks|jumlah ]
+◈ ${prefix}slots
+◈ ${prefix}juego [ piedra/papel/tijeras ]
+◈ ${prefix}tag [ nomor ]
+◈ ${prefix}tagme
+◈ ${prefix}tts [ kodebhs teks ]
+◈ ${prefix}readmore [ teks1|teks2 ]
+◈ ${prefix}fitnahpc [ nomor|teks1|teks2 ]
+◈ ${prefix}chat [ nomor|teks ]
+◈ ${prefix}fdeface [ replyimg link|teks1|teks2 ]
+◈ ${prefix}listimage
+◈ ${prefix}liststicker
+◈ ${prefix}listvn
+◈ ${prefix}listgrup
+◈ ${prefix}baileys [ reply message ]
+◈ ${prefix}q [ reply message ]
+◈ ${prefix}getcaption [ reply message ]
+◈ ${prefix}tospam [ reply sticker|jumlah ]
+◈ ${prefix}sharelock [ teks1|teks2 ]
+◈ ${prefix}sticker
+◈ ${prefix}stickerwm [ nama|author ]
+◈ ${prefix}takestick [ nama|author ]
+◈ ${prefix}colong [ reply sticker ]
+◈ ${prefix}dadu
+◈ ${prefix}semoji [ emoji ]
+◈ ${prefix}attp [ teks ]
+◈ ${prefix}toimg
+◈ ${prefix}tomp3 [ reply video ]
+◈ ${prefix}tomp4 [ reply sticker gif ]
+◈ ${prefix}robot [ reply audio ]
+◈ ${prefix}reversa [ reply audio ]
+◈ ${prefix}bajo [ reply audio ]
+◈ ${prefix}gordo [ reply audio ]
+◈ ${prefix}detikvn [ reply audio caption angka ]
+◈ ${prefix}detikvideo [ reply video caption angka ]
 ────────────────────`
 buttons = [
 {buttonId:`makermenu`,buttonText:{displayText: '𝗠𝗲𝗻𝘂 𝗟𝗼𝗴𝗼𝘀 🌿'},type:1},
@@ -1423,21 +1656,7 @@ case 'downloadmenu':
 case 'donwloadmenu':
 stamtus =`❏ 「 \`\`\`MENU DOWNLOAD\`\`\` 」
 ───────────────────
-◈ ${prefix}google [ search ]
-◈ ${prefix}image [ search ]
-◈ ${prefix}wiki [ search ]
-◈ ${prefix}mediafire [ link ]
-◈ ${prefix}ytmp4 [ link yt ]
-◈ ${prefix}ytmp3 [ link yt ]
-◈ ${prefix}play [ texto]
-◈ ${prefix}tiktok [ link ]
-◈ ${prefix}video [ link video ]
-◈ ${prefix}tinyurl [ link ]
-◈ ${prefix}fetch [ link ]
-◈ ${prefix}igdl [ link ]
-◈ ${prefix}tiktokdl [ link ]
-◈ ${prefix}pinterest [ search ]
-◈ ${prefix}tourl [ reply image/video ]
+
 ◈ ${prefix}cal [ calculadora]
 ◈ ${prefix}ss [ link ]
 ────────────────────`
@@ -1455,26 +1674,7 @@ break
 case 'menulogos':
 stamtus =`❏ 「 \`\`\`MENU MAKER\`\`\` 」
 ────────────────────
-◈ ${prefix}cuaderno 「 txt 」
-◈ ${prefix}matrix 「 txt 」
-◈ ${prefix}barcode 「 txt 」
-◈ ${prefix}bneon 「 txt 」
-◈ ${prefix}cans 「 txt 」
-◈ ${prefix}ganz 「 txt 」
-◈ ${prefix}tfire 「 txt 」
-◈ ${prefix}lithg 「 txt 」
-◈ ${prefix}wall 「 txt 」
-◈ ${prefix}dropair 「 txt 」
-◈ ${prefix}wolf 「 txt 」
-◈ ${prefix}serti1 「 txt 」
-◈ ${prefix}serti2 「 txt 」
-◈ ${prefix}serti3 「 txt 」
-◈ ${prefix}serti4 「 txt 」
-◈ ${prefix}tomlol 「 txt 」
-◈ ${prefix}text3d  txt
-◈ ${prefix}shadowsky txt 
-◈ ${prefix}ocean txt
-◈ ${prefix}wolf txt
+
 ────────────────────`
 buttons = [
 {buttonId:`owner`, buttonText: {displayText: '𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🌿'}, type: 1}
@@ -1490,41 +1690,7 @@ break
 case 'otrosmenu':
 stamtus =`❏ 「 \`\`\`OTROS MENU\`\`\` 」
 ────────────────────
-◈ ${prefix}caripesan [ teks|jumlah ]
-◈ ${prefix}slots
-◈ ${prefix}juego [ piedra/papel/tijeras ]
-◈ ${prefix}tag [ nomor ]
-◈ ${prefix}tagme
-◈ ${prefix}tts [ kodebhs teks ]
-◈ ${prefix}readmore [ teks1|teks2 ]
-◈ ${prefix}fitnahpc [ nomor|teks1|teks2 ]
-◈ ${prefix}chat [ nomor|teks ]
-◈ ${prefix}fdeface [ replyimg link|teks1|teks2 ]
-◈ ${prefix}listimage
-◈ ${prefix}liststicker
-◈ ${prefix}listvn
-◈ ${prefix}listgrup
-◈ ${prefix}baileys [ reply message ]
-◈ ${prefix}q [ reply message ]
-◈ ${prefix}getcaption [ reply message ]
-◈ ${prefix}tospam [ reply sticker|jumlah ]
-◈ ${prefix}sharelock [ teks1|teks2 ]
-◈ ${prefix}sticker
-◈ ${prefix}stickerwm [ nama|author ]
-◈ ${prefix}takestick [ nama|author ]
-◈ ${prefix}colong [ reply sticker ]
-◈ ${prefix}dadu
-◈ ${prefix}semoji [ emoji ]
-◈ ${prefix}attp [ teks ]
-◈ ${prefix}toimg
-◈ ${prefix}tomp3 [ reply video ]
-◈ ${prefix}tomp4 [ reply sticker gif ]
-◈ ${prefix}robot [ reply audio ]
-◈ ${prefix}reversa [ reply audio ]
-◈ ${prefix}bajo [ reply audio ]
-◈ ${prefix}gordo [ reply audio ]
-◈ ${prefix}detikvn [ reply audio caption angka ]
-◈ ${prefix}detikvideo [ reply video caption angka ]
+
 ────────────────────`
 buttons = [
 {buttonId:`owner`, buttonText: {displayText: '𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🌿'}, type: 1}
@@ -1662,6 +1828,30 @@ try {
 			 reply('Lo siento no pude realizar su pedido')
 			 }
 			break
+			     case 'gura':
+       case 'gawgura':
+              reply(mess.wait)
+              fetch('https://raw.githubusercontent.com/rashidsiregar28/data/main/gura')
+             .then(res => res.text())
+             .then(body => {
+              let tod = body.split("\n");
+              let pjr = tod[Math.floor(Math.random() * tod.length)];
+              sendWebp(from, pjr)
+}
+)
+              break
+case 'animestick':
+       case 'stickeranime':
+              reply(mess.wait)
+              fetch('https://raw.githubusercontent.com/rashidsiregar28/data/main/animestick')
+             .then(res => res.text())
+             .then(body => {
+              let todd = body.split("\n");
+              let pjrr = todd[Math.floor(Math.random() * todd.length)];
+              sendWebp(from, pjrr)
+}
+)
+              break
 case 'stickfeetg':
 case 'sfeetg':
 case 'stickfeet':
@@ -3979,18 +4169,16 @@ alpha.sendMessage(from, 'bien bien',text, {
 })
 break
                 case 'ytmp4':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 						if (args.length === 0) return reply(`link? *${prefix}ytmp4 [linkYt]*`)
 						let isLinks2 = args[0].match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/)
 						if (!isLinks2) return reply(mess.error.Iv)
 						try {
-							sticWait(from)
 							ytv(args[0])
 							.then((res) => {
 								const { dl_link, thumb, title, filesizeF, filesize } = res
 								axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 								.then((a) => {
-								if (Number(filesize) >= 40000) return sendMediaURL(from, thumb, `❏ *YTmp4*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Maaf durasi melebihi batas maksimal, Silahkan klik link diatas_`)
+								if (Number(filesize) >= 40000) return sendMediaURL(from, thumb, `❏ *YTmp4*\n\n❏ *Titulo* : ${title}\n❏ *Ext* : MP3\n*Tamaño* : ${filesizeF}\n*Link* : ${a.data}\n\n_Video enviandose_`)
 								sendFileFromUrl(dl_link, document, {mimetype: 'video/mp4', filename: `${title}.mp4`, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title:title,body:"◈ YTMP4",mediaType:"2",thumbnail:getBuffer(thumb),sourceUrl:`${body.slice(7)}`}}}).catch(() => reply(mess.error.api))
 							})
 							})
@@ -4036,7 +4224,6 @@ ytmp4 => Video`, contextInfo: { forwardingScore: 508, isForwarded: true, externa
             }
             break
 					case 'ytmp3':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 						if (args.length === 0) return reply(`y el link?`)
 						let isLinks = args[0].match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/)
 						if (!isLinks) return reply(mess.error.Iv)
@@ -4055,44 +4242,49 @@ ytmp4 => Video`, contextInfo: { forwardingScore: 508, isForwarded: true, externa
 							reply(mess.error.api)
 						}
 						break
-                            case 'play':		  
-  if (args.length < 1) return fakegroup('Escribe el nombre')
- (mess.wait)
-  playi = body.slice(6)
-  anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${playi}&apikey=oCHDwj8ggZGBGjU5WIaK5Rctu6c`)
-  buttons = [{buttonId: `video`,buttonText:{displayText: `Video`},type:1}]
-  if (anu.error) return fakegroup(anu.error)
-  infomp3 = `*MUSICA ENCONTRADA*
+case 'play': //@KRIZ EDITS
+    reply(mess.wait)
+   hay = body.slice(6) 
+  anu = await fetchJson(`https://supraz.herokuapp.com/api/playaudio2?quero=${hay}&apikey=supraz`)
+ buffer = await getBuffer(`https://supra-api.herokuapp.com/api/canvas/spotify?titulo=${anu.titulo}&text=LhannaBot&capa=${anu.imagem}&apikey=supraz`)  
+ Iagu = await getBuffer(anu.baixar)
+ fdsz = `MUSICA ENCONTRADA*
 
-*𝗡𝗼𝗺𝗯𝗿𝗲* : ${anu.result.title}
-*𝗘𝘅𝘁𝗲𝗻𝘀𝗶𝗼𝗻*: ${anu.result.source}
-*𝗧𝗮𝗺𝗮ñ𝗼* : ${anu.result.size}
-*𝗟𝗶𝗻𝗸* : ${anu.result.url_audio}
+🌴 *Autor* : ${anu.canal}
+🌴 *Tamaño* : ${anu.tamanho}
+🌴 *Visualizaciones* : ${anu.views}
+🌴 *Likes* : ${anu.likes}
+🌴 *Deslike* : ${anu.deslike}
+🌴 *Publicado* : ${anu.postado}
 `
-  buffer = await getBuffer(anu.result.thumbnail)
-  lagu = await getBuffer(anu.result.url_audio)
-  alpha.sendMessage(from, buffer, image, {
-quoted: mek, caption: infomp3 })
-  alpha.sendMessage(from, lagu, audio, {
-mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek})
-          break
-case 'video':  		  
-				  if (args.length < 1) return ('*Ingrese el titulo*')
-                alpha.sendMessage(from, mess.wait, text,{quoted : mek})
-				playi = args.join(" ")
-				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp4?q=${playi}&apikey=oCHDwj8ggZGBGjU5WIaK5Rctu6c`)
-				if (anu.error) return fakegroup(anu.error)
-				infomp3 = `*VIDEO ENCONTRADO*
+ alpha.sendMessage(from, buffer, image, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "ðŸŽ† Supra-key", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": await getBuffer('https://i.pinimg.com/736x/6a/f4/43/6af4437506b69872c7ff6ec9b915dbe6.jpg')} } }, caption: fdsz })
 
-*𝗡𝗼𝗺𝗯𝗿𝗲* :  : ${anu.result.title}
-*𝗘𝘅𝘁𝗲𝗻𝘀𝗶𝗼𝗻* : ${anu.result.source}
-*𝗧𝗮𝗺𝗮ñ𝗼* : ${anu.result.size}
-`			
-				buffer = await getBuffer(anu.result.thumbnail)
-				buffer1 = await getBuffer(anu.result.url_video)
-				alpha.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
-				alpha.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.video}.mp4`, quoted: mek, caption: 'ð´ð‘žð‘¢ð‘– ð‘’ð‘ ð‘¡ð‘Ž ð‘¡ð‘¢ ð‘£ð‘–ð‘‘ð‘’ð‘œ ðŸ˜'})				
-          break
+alpha.sendMessage(from, Iagu, audio, {mimetype: 'audio/mp4', ptt:true, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": `${anu.titulo}ï¸`, 'jpegThumbnail': await getBuffer(anu.imagem)}}}})
+   break
+
+case 'ytmp4':
+if (args.length ==0)return reply('Link?')
+ini_link = args.join(" ")
+ini = await fetchJson(`https://api-yogipw.herokuapp.com/api/download/ytmp4?url=${ini_link}`)
+anu = ini.result
+ini_txt =`*Tituolo* : ${anu.title}\n*Autor* : ${anu.channel}\n*Publicado* : ${anu.published}\n*Vistas* : ${anu.views}`
+yt4 = fs.readFileSync('./cnf.jpg')
+alpha.sendMessage(from, yt4, image, { quoted: mek, caption: ini_txt })
+res = await getBuffer(anu.url)
+alpha.sendMessage(from, res, video)
+break
+
+case 'ytmp3':
+if (args.length ==0)return reply('Link?')
+ini_link = args.join(" ")
+ini = await fetchJson(`https://api-yogipw.herokuapp.com/api/download/ytmp3?url=${ini_link}`)
+get = ini.result
+ini_txt =`*Titulo* : ${get.title}\n*Autor* : ${get.channel}\n*Públicacion* : ${get.published}\n*Visualizaciones* : ${get.views}`
+yt3 = fs.readFileSync('./cnf.jpg')
+alpha.sendMessage(from, yt3, image, { quoted: mek, caption: ini_txt })
+res = await getBuffer(get.url)
+alpha.sendMessage(from, res, audio)
+break
 
                     case 'exif':
                     if (!isOwner && !mek.key.fromMe) return sticOwner(from)
