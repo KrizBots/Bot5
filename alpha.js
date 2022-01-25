@@ -1089,9 +1089,8 @@ reply('http://youtube.com/c/LEX4YOUU')
         reply(su)
 				}
         switch (command) {
-case 'jsjsjkwlwjww':
+case 'menu':
 var z = '_'
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 quotesnya = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=KurrXd`)
 quotes = quotesnya.result.quote
 by = quotesnya.result.by
@@ -1101,19 +1100,82 @@ tod = `┏━━━━━━━━━━━━━━━━━━━━
 ⬡ ${z}Numero : ${NomorOwner}${z}
 ┗━━━━━━━━━━━━━━━━━━`
 tod2 =`┏━━━❒ *LISTA DE  MENUS*
-${z}冬 ${prefix}serbot${z}
-${z}冬 ${prefix}status${z}
-${z}冬 ${prefix}asupanmenu${z}
-${z}冬 ${prefix}runtime${z}
-${z}冬 ${prefix}makermenu${z}
-${z}冬 ${prefix}ownermenu${z}
-${z}冬 ${prefix}menugrupo${z}
-${z}冬 ${prefix}otrosmenu${z}
-${z}冬 ${prefix}downloadmenu${z}
-${z}冬 ${prefix}menulogos${z}
-${z}冬 ${prefix}funmenu${z}
-${z}冬 ${prefix}nsfwmenu${z}
-┗━━━━━━━━━━━━━━━━━`
+
+╭─❒ ⌜ 𝘔𝘦𝘯𝘶 𝘓𝘰𝘨𝘰𝘴 ⌟ ❒
+├❏ ${prefix}blackpink {texto}
+├❏ ${prefix}pipe {texto}
+├❏ ${prefix}heloween {texto}
+├❏ ${prefix}heloween2 {texto}
+├❏ ${prefix}horor {texto}
+├❏ ${prefix}cuaderno {texto}
+├❏ ${prefix}sirkuit {texto}
+├❏ ${prefix}discovery {texto}
+├❏ ${prefix}fiction {texto}
+├❏ ${prefix}8bit {texto}
+├❏ ${prefix}demon {texto}
+├❏ ${prefix}transformer {texto}
+├❏ ${prefix}berry {texto}
+├❏ ${prefix}leyered {texto}
+├❏ ${prefix}thunder {texto}
+├❏ ${prefix}magma {texto}
+├❏ ${prefix}stone {texto}
+├❏ ${prefix}neon3 {texto}
+├❏ ${prefix}glitch {texto}
+├❏ ${prefix}glitch2 {texto}
+├❏ ${prefix}broken {texto}
+├❏ ${prefix}gura {texto
+├❏ ${prefix}gradient {texto}
+├❏ ${prefix}glossy {texto}
+├❏ ${prefix}watercolor {texto}
+├❏ ${prefix}multicolor {texto}
+├❏ ${prefix}neondevil {texto}
+├❏ ${prefix}underwater {texto}
+├❏ ${prefix}bear {texto}
+└──────────────❒
+╭─❒ ⌜𝘕𝘶𝘦𝘷𝘰𝘴⌟ ❒
+├❏ ${prefix}fox
+├❏ ${prefix}dog
+├❏ ${prefix}cat
+├❏ ${prefix}panda
+├❏ ${prefix}panda1
+├❏ ${prefix}bird
+├❏ ${prefix}koala
+└─────────────❒
+╭─❒ ⌜𝘕𝘶𝘦𝘷𝘰𝘴⌟ ❒
+├❏ ${prefix}sfwneko
+├❏ ${prefix}cuckold
+├❏ ${prefix}uniform
+├❏ ${prefix}wpnsfwmobile
+├❏ ${prefix}zettairyouiki
+├❏ ${prefix}waifu
+├❏ ${prefix}loli
+├❏ ${prefix}husbu
+├❏ ${prefix}milf
+├❏ ${prefix}cosplay
+├❏ ${prefix}wallml
+├❏ ${prefix}koala
+└─────────────❒
+╭─❒ ⌜𝘕𝘶𝘦𝘷𝘰𝘴⌟ ❒
+├❏ ${prefix}hentai
+├❏ ${prefix}neko
+├❏ ${prefix}trapnime
+├❏ ${prefix}awoo
+├❏ ${prefix}blowjob
+├❏ ${prefix}pack
+├❏ ${prefix}husbu
+├❏ ${prefix}avatar
+├❏ ${prefix}stickpussy 
+├❏ ${prefix}stickneko
+├❏ ${prefix}stickcum
+├❏ ${prefix}stickbj 
+├❏ ${prefix}stickfeetg
+├❏ ${prefix}padoru
+└─────────────❒
+╭─❒ ⌜𝘕𝘶𝘦𝘷𝘰⌟ ❒
+├❏ ${prefix}perfiles
+└─────────────❒
+
+                     `
 buttons = [
 {buttonId:`funmenu`, buttonText: {displayText: '𝗙𝘂𝗻 𝗠𝗲𝗻𝘂🌿'}, type: 1},
 {buttonId:`owner`, buttonText: {displayText: '𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🌿'}, type: 1}
@@ -1126,6 +1188,32 @@ const menuu = {
 }
 await alpha.sendMessage(from, menuu, MessageType.buttonsMessage, {quoted: ftex})
 		break
+case 'play': //@KRIZ EDITS
+    reply(mess.wait)
+   hay = body.slice(6) 
+  anu = await fetchJson(`https://supraz.herokuapp.com/api/playaudio2?quero=${hay}&apikey=supraz`)
+ buffer = await getBuffer(`https://supra-api.herokuapp.com/api/canvas/spotify?titulo=${anu.titulo}&text=LhannaBot&capa=${anu.imagem}&apikey=supraz`)  
+ Iagu = await getBuffer(anu.baixar)
+ fdsz = `MUSICA ENCONTRADA*
+
+🌴 *Autor* : ${anu.canal}
+🌴 *Tamaño* : ${anu.tamanho}
+🌴 *Visualizaciones* : ${anu.views}
+🌴 *Likes* : ${anu.likes}
+🌴 *Deslike* : ${anu.deslike}
+🌴 *Publicado* : ${anu.postado}
+`
+ alpha.sendMessage(from, buffer, image, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "ðŸŽ† Supra-key", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": await getBuffer('https://i.pinimg.com/736x/6a/f4/43/6af4437506b69872c7ff6ec9b915dbe6.jpg')} } }, caption: fdsz })
+
+alpha.sendMessage(from, Iagu, audio, {mimetype: 'audio/mp4', ptt:true, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": `${anu.titulo}ï¸`, 'jpegThumbnail': await getBuffer(anu.imagem)}}}})
+   break
+case 'perfiles':
+             anu = await fetchJson(`https://ziy.herokuapp.com/api/ppcouple?apikey=xZiyy`)
+             cewe = await getBuffer(anu.result.female)
+              cowo = await getBuffer(anu.result.male)
+              alpha.sendMessage(from, cowo, image, {quoted: mek, caption: '' })
+              alpha.sendMessage(from, cewe, image, {quoted: mek, caption: 'listo ;D' })
+              break
 
 //FunMenu
       case 'joto':
@@ -1144,43 +1232,305 @@ await alpha.sendMessage(from, menuu, MessageType.buttonsMessage, {quoted: ftex})
         membr.push(goo.jid)
         mentions(teks, membr, true)
         break
-case 'allmenu':
-reply (`────────────────────
-◈ ${prefix}getpict [ @tag ]
-◈ ${prefix}getname [ reply target ]
-◈ ${prefix}getbio [ reply target ]
-◈ ${prefix}promote [ @tag ]
-◈ ${prefix}demote [ @tag ]
-◈ ${prefix}antilink [ on/off ]
-◈ ${prefix}antivirtex [ on/off ]
-◈ ${prefix}antiwame [ on/off ]
-◈ ${prefix}antibug [ on/off ]
-◈ ${prefix}welcome [ on/off ]
-◈ ${prefix}creategrup [ nama|@tag ]
-◈ ${prefix}tictactoe [ @tag ]
-◈ ${prefix}delttt
-◈ ${prefix}getpp
-◈ ${prefix}antiwame
-◈ ${prefix}getdeskgc
-◈ ${prefix}hacked [ teks ]
-◈ ${prefix}setnamegc [ texto ]
-◈ ${prefix}setdeskgc [ texto ]
-◈ ${prefix}opengc
-◈ ${prefix}closegc
-◈ ${prefix}resetlinkgc
-◈ ${prefix}linkgrup
-◈ ${prefix}hidetag [ texto ]
-◈ ${prefix}sticktag [ sticker ]
-
-break
-case 'shadowsky': 
-                    if (args.length < 1) return reply(`*Ejemplo :*\n${prefix}${command} Kriz`)
-					makell = args.join(" ")
-					reply(mess.wait)
-					anu = await fetchJson(`https://leyscoders-api.herokuapp.com/api/textmaker/shadow-sky?q=${makell}&apikey=MIMINGANZ`)
-					buffer1 = await getBuffer(anu.result.url)
-					alpha.sendMessage(from, buffer1, image, {quoted: mek})
+case 'uniform':
+					case 'sfwneko':
+					case 'cuckold':
+					case 'wpnsfwmobile':
+					case 'zettairyouiki':
+					qute6 = await getBuffer(`https://api.xteam.xyz/randomimage/${command}?APIKEY=7415bc4287ad5ca8`)
+					Syifa.sendMessage(from, qute6, image, { quoted: mek, caption: ':)' })
 					break
+             case 'waifu':
+             case 'loli':
+            case 'husbu':
+            case 'milf':
+            case 'cosplay':
+            case 'wallml':
+              let wipu = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
+              let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
+              fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
+		      buttons = [{buttonId: `${command}`,buttonText:{displayText: `siguiente 💫`},type:1},{buttonId:`owner`,buttonText:{displayText:'*𝘤𝘳𝘦𝘢𝘥𝘰𝘳* 💫'},type:1}]
+              imageMsg = ( await alpha.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
+              buttonsMessage = {footerText:'*𝘛𝘦 𝘨𝘶𝘴𝘵𝘢 𝘭𝘰 𝘲𝘶𝘦 𝘷𝘦𝘻?* 💫', imageMessage: imageMsg,
+              contentText:`Creator SyifaCode`,buttons,headerType:4}
+              prep = await alpha.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              alpha.relayWAMessage(prep)
+              fs.unlinkSync(`./${sender}.jpeg`)
+              break
+case 'blackpink':
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/blackpink?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'Listo' })
+break
+case 'pipe':
+if (args.length < 1) return reply(`ejemplo: Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/water_pipe?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'heloween':
+
+if (args.length < 1) return reply(`ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/halloween?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'heloween2':
+
+if (args.length < 1) return reply(`ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/halloween2?text=${query}&text2=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'horor':
+
+if (args.length < 1) return reply(`ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/horror?text=${query}&text2=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+
+case 'sirkuit':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/sircuit?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'discovery':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/discovery?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'fiction':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/fiction?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case '8bit':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/game8bit?text=${query}&text2=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'demon':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/demon?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'transformer':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/transformer?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'berry':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/berry?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'leyered':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/layered?text=${query}&text2=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'thunder':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/thunder?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'magma':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/magma?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'stone':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/3dstone?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'neon3':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/neon?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'glitch':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/glitch?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'glitch2':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/glitch2?text=${query}&text2=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'herrypoter':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/harry_potter?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'embosed':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/embossed?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'broken':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/broken?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'gradient':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/gradient?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'glossy':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/glossy?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'watercolor':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/watercolor?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'multicolor':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/multicolor?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'neondevil':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/neon_devil?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'underwater':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/underwater?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+case 'bear':
+
+if (args.length < 1) return reply(`Ejemplo : Kriz`)
+reply(mess.wait)
+query = args.join (" ")
+bf = await getBuffer(`https://api-alphabot.herokuapp.com/api/textpro/bear?text=${query}&apikey=${AlphaBot}`)
+alpha.sendMessage(from, bf, image, { quoted: mek, caption: 'listo' })
+break
+//══════════[ ANIMASI HEWAN ]════════════════════════════//
+                   case 'fox':  
+                   
+                   anu = await fetchJson(`https://some-random-api.ml/img/fox`)
+                   anu1 = await getBuffer(anu.link)
+                   alpha.sendMessage(from, anu1, image, {caption: `^w^`, quoted: mek})
+                   break
+                   case 'dog':  
+                   
+                   anu = await fetchJson(`https://some-random-api.ml/img/dog`)
+                   anu1 = await getBuffer(anu.link)
+                   alpha.sendMessage(from, anu1, image, {caption: `^w^`, quoted: mek})
+                   break
+                   case 'cat':
+                  
+                   anu = await fetchJson(`https://some-random-api.ml/img/cat`)
+                   anu1 = await getBuffer(anu.link)
+                   alpha.sendMessage(from, anu1, image, {caption: `^w^`, quoted: mek})
+                   break
+                   case 'panda':  
+                   
+                   anu = await fetchJson(`https://some-random-api.ml/img/panda`)
+                   anu1 = await getBuffer(anu.link)
+                   alpha.sendMessage(from, anu1, image, {caption: `^w^`, quoted: mek})
+                   break
+                   case 'panda1':  
+                   
+                   anu = await fetchJson(`https://some-random-api.ml/img/red_panda`)
+                   anu1 = await getBuffer(anu.link)
+                   alpha.sendMessage(from, anu1, image, {caption: `^w^`, quoted: mek})
+                   break
+                   case 'bird': 
+                   
+                   anu = await fetchJson(`https://some-random-api.ml/img/birb`)
+                   anu1 = await getBuffer(anu.link)
+                   alpha.sendMessage(from, anu1, image, {caption: `^w^`, quoted: mek})
+                   break
+                   case 'koala':  
+                 
+                   anu = await fetchJson(`https://some-random-api.ml/img/koala`)
+                   anu1 = await getBuffer(anu.link)
+                   alpha.sendMessage(from, anu1, image, {caption: `^w^`, quoted: mek})
+                   break
 					case 'puta'
 					case 'fea'
       if (!isGroup) return reply(mess.only.group)
@@ -1194,7 +1544,6 @@ case 'shadowsky':
         mentions(teks, membr, true)
         break
 case 'funmenu':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 stamtus = `❏ 「 \`\`\`MENU\`\`\` 」
 ────────────────────
  「 \`\`\`DIVERSION\`\`\` 」
@@ -1265,7 +1614,7 @@ const grup = {
 await alpha.sendMessage(from, grup, MessageType.buttonsMessage, {quoted: ftex})
 		break
 case 'menugrupo':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 stamtus = `❏ 「 \`\`\`MENU GROUP\`\`\` 」
 ────────────────────
 ◈ ${prefix}getpict [ @tag ]
@@ -1478,7 +1827,7 @@ await alpha.sendMessage(from, verify, MessageType.buttonsMessage, {quoted: mek})
 case 'simplemenu':
 case 'listmenu':
   case 'command':
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+  
  stod = `${sender}`
  listMsg = {
  buttonText: 'LIST MENU',
@@ -1546,18 +1895,9 @@ case 'listmenu':
 alpha.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:mek})
 break
 case 'nsfwmenu':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 stamtus = `❏ 「 \`\`\`MENU 18+\`\`\` 」
-────────────────────
-◈ ${prefix}waifu
-◈ ${prefix}nsneko
-◈ ${prefix}wallnime
-◈ ${prefix}blekpink
-◈ ${prefix}lomli
-◈ ${prefix}nshentai
-◈ ${prefix}bigwibu
-◈ ${prefix}cecan
-◈ ${prefix}sagiri
+───────────────────
 ◈ ${prefix}hentai
 ◈ ${prefix}neko
 ◈ ${prefix}trapnime
@@ -1960,7 +2300,7 @@ break
 // BIAR GAK LUPA 
 //LUPA
        case 'maker3d': 
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+  
                     if (args.length < 1) return reply(`*Ejemplo :*\n${prefix + command} Kriz xd`)
 					teksnya = args.join(" ")
 					sticWait(from)
@@ -1970,7 +2310,7 @@ break
 					break
 					
 					case 'maker2d': 
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+  
                     if (args.length < 1) return reply(`*Ejemplo :*\n${prefix + command} Kriz xd`)
 					teksnya = args.join(" ")
 					sticWait(from)
@@ -1980,7 +2320,7 @@ break
 					break
 					
 case 'snow': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('*y el texto?*') 
 snow = args.join(" ")
 sticWait(from)
@@ -1988,7 +2328,7 @@ snow = await getBuffer(`https://api.zeks.me/api/snowwrite?text1=HartaTahta&text2
 alpha.sendMessage(from, snow, image, { quoted:mek,caption:'listo' })
 break
 case 'pubg': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('*y el texto?*') 
 pubg = args.join(" ")
 sticWait(from)
@@ -1997,7 +2337,7 @@ alpha.sendMessage(from, pubg, image, { quoted:mek,caption:'listo' })
 break
 
 case 'bneon': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('*y el texto?*') 
 bneon = args.join(" ")
 sticWait(from)
@@ -2005,7 +2345,7 @@ bneon = await getBuffer(`https://api.zeks.me/api/bneon?apikey=apivinz&text=${bne
 alpha.sendMessage(from, bneon, image, { quoted:mek,caption:'listo' })
 break
 case 'matrix': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('*y el texto?*') 
 matrix = args.join(" ")
 sticWait(from)
@@ -2014,79 +2354,79 @@ alpha.sendMessage(from, matrix, image, { quoted:mek,caption:'listo' })
 break
 
 case 'tfire': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('*y el texto?*') 
 tfire = args.join(" ")
 sticWait(from)
 tfire = await getBuffer(`https://api.zeks.me/api/tfire?text=${tfire}&apikey=apivinz`)
-alpha.sendMessage(from, tfire, image, { quoted:mek,caption:'Nih Ngab' })
+alpha.sendMessage(from, tfire, image, { quoted:mek,caption:'listo' })
 break
 case 'lithg': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('*y el texto?*') 
 lithg = args.join(" ")
 sticWait(from)
 lithg = await getBuffer(`https://api.zeks.me/api/lithgtext?text=${lithg}&apikey=apivinz`)
-alpha.sendMessage(from, lithg, image, { quoted:mek,caption:'Nih Ngab' })
+alpha.sendMessage(from, lithg, image, { quoted:mek,caption:'listo' })
 break
 case 'wall': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('*y el texto?*') 
 wall = args.join(" ")
 sticWait(from)
 wall = await getBuffer(`https://api.zeks.me/api/breakwall?apikey=apivinz&text=${wall}`)
-alpha.sendMessage(from, wall, image, { quoted:mek,caption:'Nih Ngab' })
+alpha.sendMessage(from, wall, image, { quoted:mek,caption:'listo' })
 break
 case 'dropair': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('*y el texto?*') 
 dropair = args.join(" ")
 sticWait(from)
 dropair = await getBuffer(`https://api.zeks.me/api/dropwater?apikey=apivinz&text=${dropair}`)
-alpha.sendMessage(from, dropair, image, { quoted:mek,caption:'Nih Ngab' })
+alpha.sendMessage(from, dropair, image, { quoted:mek,caption:'listo' })
 break
 
 case 'wolf': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('*y el texto?*') 
 wolf = args.join(" ")
 sticWait(from)
 wolf = await getBuffer(`https://api.zeks.me/api/wolflogo?apikey=apivinz&text1=WOLF&text2=${wolf}`)
-alpha.sendMessage(from, wolf, image, { quoted:mek,caption:'Nih Ngab' })
+alpha.sendMessage(from, wolf, image, { quoted:mek,caption:'listo' })
 break
 
 case 'cuaderno': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('*y el texto?*') 
 catat = args.join(" ")
 sticWait(from)
 catat = await getBuffer(`https://api.zeks.me/api/nulis?text=${catat}&apikey=apivinz`)
-alpha.sendMessage(from, catat, image, { quoted:mek,caption:'Nih Ngab' })
+alpha.sendMessage(from, catat, image, { quoted:mek,caption:'listo' })
 break
 case 'ganz': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('*y el texto?*') 
 matrix = args.join(" ")
 sticWait(from)
 ganz = await getBuffer(`https://api.zeks.me/api/gtext?text1=${matrix}&text2=GANZ&apikey=apivinz`)
-alpha.sendMessage(from, ganz, image, { quoted:mek,caption:'Nih Ngab' })
+alpha.sendMessage(from, ganz, image, { quoted:mek,caption:'listo' })
 break
 case 'cans': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('*y el texto?*') 
 matrix = args.join(" ")
 sticWait(from)
 cans = await getBuffer(`https://api.zeks.me/api/gtext?text1=${matrix}&text2=CANS&apikey=apivinz`)
-alpha.sendMessage(from, cans, image, { quoted:mek,caption:'Nih Ngab' })
+alpha.sendMessage(from, cans, image, { quoted:mek,caption:'listo' })
 break
 
 case 'barcode': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('*y el texto?*') 
 matrix = args.join(" ")
 sticWait(from)
 bccode = await getBuffer(`https://api.zeks.me/api/barcode?apikey=apivinz&text=${matrix}`)
-alpha.sendMessage(from, bccode, image, { quoted:mek,caption:'Nih Ngab' })
+alpha.sendMessage(from, bccode, image, { quoted:mek,caption:'listo' })
 break
 
 case 'waifu':
@@ -2107,7 +2447,7 @@ case 'waifu':
           //🐀💰 LADRÓN
                
                case 'brainly':
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+  
 					if (args.length < 1) return reply('Pertanyaan apa')
 		          	brien = args.join(' ')
 					brainly(`${brien}`).then(res => {
@@ -2119,7 +2459,7 @@ case 'waifu':
 		            })              
 					break
 case 'igstalk':
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+  
 try{
 if (!c) return reply('Usernamenya?')
 ig.fetchUser(`${args.join(' ')}`).then(Y => {
@@ -2140,35 +2480,35 @@ alpha.sendMessage(from, nih_buff, image, { quoted: mek, caption: tt });
 break;      
 break    
                 case 'bisakah':
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+  
 					bisakah = body.slice(1)
 					const bisa =['Bisa','Tidak Bisa','Coba Ulangi','Ngimpi kah?','yakin bisa?']
 					const keh = bisa[Math.floor(Math.random() * bisa.length)]
 					alpha.sendMessage(from, 'Pertanyaan : *'+bisakah+'*\n\nJawaban : '+ keh, text, { quoted: mek })
 					break
 				case 'kapankah':
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+  
 					kapankah = body.slice(1)
 					const kapan =['Besok','Lusa','Tadi','4 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Minggu Lagi','2 Minggu Lagi','3 Minggu Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','1 Tahun Lagi','2 Tahun Lagi','3 Tahun Lagi','4 Tahun Lagi','5 Tahun Lagi','6 Tahun Lagi','1 Abad lagi','3 Hari Lagi','Tidak Akan Pernah']
 					const koh = kapan[Math.floor(Math.random() * kapan.length)]
 					alpha.sendMessage(from, 'Pertanyaan : *'+kapankah+'*\n\nJawaban : '+ koh, text, { quoted: mek })
 					break
          			  case 'apakah':
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+  
 					apakah = body.slice(1)
 					const apa =['Iya','Tidak','Bisa Jadi','Coba Ulangi','Tanyakan Ayam']
 					const kah = apa[Math.floor(Math.random() * apa.length)]
 					alpha.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: mek })
 					break
 				case 'rate':
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+  
 					rate = body.slice(1)
 					const ra =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
 					const te = ra[Math.floor(Math.random() * ra.length)]
 					alpha.sendMessage(from, 'Pertanyaan : *'+rate+'*\n\nJawaban : '+ te+'%', text, { quoted: mek })
 					break
 	case 'igstory': 
-  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+  
             if(!c) return reply('Usernamenya?')
             hx.igstory(`${c}`)
             .then(async result => {
@@ -2184,7 +2524,7 @@ break
             });
             break
     case 'playstore':
-    if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+    
             if(!c) return reply('y el texto?')
             let play = await hx.playstore(`${c}`)
             let store = '❉─────────────────────❉\n'
@@ -2198,7 +2538,7 @@ break
             reply(store)
             break
 		    case 'fb':
-		if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+		
             if (!c) return reply('Link?')
             if (!isUrl(args[0]) && !args[0].includes('facebook.com')) return reply(mess.error.api)
             sticWait(from)
@@ -2213,7 +2553,7 @@ case 'linkwa':
 case 'grupwa':
 case 'groupwa':
 case 'gcwa':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
             if(!c) return reply('link?')
             hx.linkwa(`${c}`)
             .then(result => {
@@ -2225,7 +2565,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
             });
             break 
     case 'otaku':
-    if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+    
             if(!c) return reply('judul animenya?')
             let anime = await hx.otakudesu(`${c}`)
             rem = `*Judul* : ${anime.judul}
@@ -2244,7 +2584,7 @@ ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.bat
             alpha.sendMessage(from,ram,image,{quoted:mek,caption:rem})
             break
     case 'komiku':
-    if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+    
             if(!c) return reply(`judulnya?\n${prefix}komiku mao gakuin`)
             let komik = await hx.komiku(`${c}`)
             result = `*Title* : ${komik.title}\n
@@ -2256,7 +2596,7 @@ ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.bat
             sendMediaURL(from, komik.image,result)
             break  
 		    case 'twmp4': case 'twitter':
-		if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+		
 if (args.length < 1) return reply('Link?')
 lin = args[0]
 sticWait(from)
@@ -2268,7 +2608,7 @@ sendMediaURL(from, Anu, 'Done!')
 })
 break
 case 'twmp3':
-		if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+		
 if (args.length < 1) return reply('Link?')
 lin = args[0]
 sticWait(from)
@@ -2280,7 +2620,7 @@ alpha.sendMessage(from, khs, audio, {mimetype:'audio/mp4', filename:'audio.mp3',
 })
 break
     case 'chara':
-		if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+		
             if(!c) return reply(`gambar apa?\n${prefix}chara nino`)
             let im = await hx.chara(`${c}`)
             let acak = im[Math.floor(Math.random() * im.length)]
@@ -2337,7 +2677,7 @@ break
                 }
                 break
 case 'tutuptime':
-		if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+		
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return sticAdmin(from)
 if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -2351,7 +2691,7 @@ alpha.groupSettingChange (from, GroupSettingChange.messageSend, true);
 }, timer)
 break
 case 'bukatime':
-		if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+		
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return sticAdmin(from)
 if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -2425,7 +2765,7 @@ case 'serbot':
     jadibot(reply,alpha,from)
     break
     case 'listbot':
-    if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+    
     let tekss = '「 *LISTA BOT* 」\n'
     for(let i of listjadibot) {
     tekss += `*Numero* : ${i.jid.split('@')[0]}
@@ -2483,7 +2823,7 @@ teksnyee += `\n\n*❏ ID :* ${i.id}\n*❏ Cmd :* ${i.chats}`
 reply(teksnyee)
 break
        case 'debug':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 			 res = await alpha.prepareMessageFromContent(from,{
 "templateMessage": {
 						"hydratedTemplate": {
@@ -2518,7 +2858,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 alpha.relayWAMessage(res)
 break
 case 'debug2':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
    res = await alpha.prepareMessageFromContent(from,{
 "templateMessage": {
   "hydratedFourRowTemplate": {
@@ -2554,7 +2894,7 @@ break
 case 'ig':
 case 'igdl':
 case 'instagram':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (!c) return reply('Linknya?')
 var { igDownloader } = require('./lib/igdown')
    res = await igDownloader(`${c}`).catch(e => {
@@ -2564,10 +2904,8 @@ console.log(res)
 sendMediaURL(from,`${res.result.link}`,`${res.result.desc}`)
                     break
                     case 'tiktok':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 if (!c) return reply('Linknya?')
 var { TiktokDownloader } = require('./lib/tiktokdl')
-sticWait(from)
 res = await TiktokDownloader(`${c}`).catch(e => {
 reply(mess.error.api)
 })
@@ -2575,7 +2913,7 @@ console.log(res)
 sendMediaURL(from, `${res.result.nowatermark}`)
 break
                     case 'tourl':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
     if ((isMedia && !mek.message.videoMessage || isQuotedImage || isQuotedVideo ) && args.length == 0) {
             boij = isQuotedImage || isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
             owgi = await alpha.downloadMediaMessage(boij)
@@ -2586,7 +2924,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
             }
             break
 case 'viewonce':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 res = await alpha.prepareMessageFromContent(from,{
 "viewOnceMessage": {
 "message": {
@@ -2601,7 +2939,7 @@ res = await alpha.prepareMessageFromContent(from,{
 alpha.relayWAMessage(res)
 break
 case 'pinterest':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (!c) return reply('yg mau di cari apa?')
 pinterest(`${c}`).then( data => {
 const amsulah = data.result
@@ -2612,11 +2950,11 @@ break
 case 'isbaileys': 
 case 'bail': 
 case 'baileys':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 reply(`${mek.quoted.isBaileys}`)
 break
 case 'getcaption':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 try {
 reply(`${mek.quoted.title}`)
 } catch {
@@ -2624,7 +2962,7 @@ reply(`${mek.quoted.caption}`)
 }
 break
 case 'q': 
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
     if (!m.quoted) return reply('reply pesan!')
     let qse = alpha.serializeM(await m.getQuotedObj())
     if (!qse.quoted) return reply('pesan yang anda reply tidak mengandung reply!')
@@ -2638,12 +2976,12 @@ case 'listgroup':
                 case 'gruplist':
                 case 'groplist':
                 case 'grouplist':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
   const txs = alpha.chats.all().filter(v => v.jid.endsWith('g.us')).map(v =>`- ${alpha.getName(v.jid)}\n${v.jid}\n[${v.read_only ? 'Left' : 'Joined'}]`).join`\n\n`
   reply(txs)
   break
   case 'caripesan':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply(`Penggunaan ${prefix}caripesan Hi|15`)
 tekse = args.join('')
 if (tekse.includes("|")) { 
@@ -2671,7 +3009,7 @@ reply(`Penggunaan ${prefix}caripesan Hi|15`)
 break
   case 'get':
 case 'fetch':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
             if(!c) return reply('Linknya?')
             fetch(`${args[0]}`).then(res => res.text())  
             .then(bu =>{
@@ -2738,13 +3076,13 @@ await alpha.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted
         case 'test':
 				case 'cek':
 				case 'tes':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 				runtime = process.uptime()
 				reply(`- NYANN YA ACTIVO °w°\n${waktu(runtime)}`)
 				break
 				case 'tictactoe':
 case 'ttt':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (!isGroup) return reply(mess.only.group)
 if (args.length < 1) return reply('Etiqueta a tus oponente! ')
 if (isTTT) return reply('Hay un juego en este grupo, espere')
@@ -2765,7 +3103,7 @@ Escribe ${prefix}delttc , Para reiniciar el juego en el grupo!`, text, {contextI
 break
                 case 'delttt':
                 case 'delttc':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (!isGroup) return reply(mess.only.group)
 if (!isTTT) return reply('No hay juegos en este grupo')
 naa = ky_ttt.filter(toek => !toek.id.includes(from)) 
@@ -2808,7 +3146,7 @@ break
 			break
 		case 'image':
 case 'googleimage':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('Que quieres buscar?')
 sticWait(from)
 teks = args.join(' ')
@@ -2827,7 +3165,7 @@ break
 				case 'google':
 case 'googlesearch':
 case 'ggs':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('que es lo que buscas xd?')
 teks = args.join(' ')
 sticWait(from)
@@ -2842,7 +3180,7 @@ var akhir = kant.trim()
 reply(akhir)
 break
 case 'wiki':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply(' Yang Mau Di Cari Apa? ')
 teks = args.join(' ')
 res = await wikiSearch(teks).catch(e => {
@@ -2855,7 +3193,7 @@ sendFileFromUrl(res[0].thumb, image, {quoted: mek, caption: result}).catch(e => 
 })
 break
 case 'mediafire':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+
 if (args.length < 1) return reply('Link Nya Mana? ')
 if(!isUrl(args[0]) && !args[0].includes('mediafire')) return reply(mess.error.api)
 if (Number(filesize) >= 30000) return reply(`*「 MEDIAFIRE DOWNLOAD 」*
@@ -2882,7 +3220,7 @@ break
 				
 			
 				case 'robot':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 encmedial = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 medial = await alpha.downloadAndSaveMediaMessage(encmedial)
 ran = getRandom('.mp3')
@@ -2895,7 +3233,7 @@ fs.unlinkSync(ran)
 })
 break
 case 'gordo':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					encmediaz = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					mediaz = await alpha.downloadAndSaveMediaMessage(encmediaz)
 					ran = getRandom('.mp3')
@@ -2908,7 +3246,7 @@ case 'gordo':
 					})
 					break
 case 'reversa':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 	encmediau = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 	mediau = await alpha.downloadAndSaveMediaMessage(encmediau)
 	ran = getRandom('.mp3')
@@ -2921,7 +3259,7 @@ fs.unlinkSync(ran)
 	})
 break
 case 'bajo':                 
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					encmediao = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					mediao = await alpha.downloadAndSaveMediaMessage(encmediao)
 					ran = getRandom('.mp3')
@@ -2934,7 +3272,7 @@ case 'bajo':
 					})
 				break
 case 'sider':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 if (!isGroup) return reply(mess.only.group)
 infom = await alpha.messageInfo(from, mek.message.extendedTextMessage.contextInfo.stanzaId)
 tagg = []
@@ -2947,7 +3285,7 @@ tagg.push(i.jid)
 mentions(teks, tagg, true)
 break
 case 'tospam':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 if (!isQuotedSticker && !isQuotedAudio && !isQuotedImage && budy.length > 10) {
 teks = body.slice(8)
 oi1 = teks.split('|')[0]
@@ -3000,7 +3338,7 @@ if (Number(oi2) >= 50) return reply('Kebanyakan!')
 					alpha.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
 					break
 				case 'colong':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 		if (!isQuotedSticker) return reply(`Reply sticker dengan caption *${prefix}colong*`)
 		const encmediia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 	        const meidia = await alpha.downloadAndSaveMediaMessage(encmediia, `./sticker/${sender}`)
@@ -3013,7 +3351,7 @@ if (Number(oi2) >= 50) return reply('Kebanyakan!')
 				break
 				case 'readmore':
 			    	case 'more':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 			    	const more = String.fromCharCode(8206)
 			    	const readmore = more.repeat(4001)
 				    if (!c.includes('|')) return  reply(mess.error.api)
@@ -3052,7 +3390,7 @@ sleep(4000)
 reply('Sukses')
 break
 				case 'detikvn':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					mediam = await alpha.downloadAndSaveMediaMessage(encmediam)
 					cokmatane = Number(args[0])
@@ -3061,7 +3399,7 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 						fs.unlinkSync(mediam)
 				break
 				case 'detikvideo':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 				encmedian = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					median = await alpha.downloadAndSaveMediaMessage(encmedian)
 					cokmatane = Number(args[0])
@@ -3070,7 +3408,7 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 						fs.unlinkSync(median)
 				break
 				case "antivirtex":
-        	if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+        	
 	        if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return sticAdmin(from)
 			if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -3099,7 +3437,7 @@ await alpha.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftex}
 					}
 					break
 				case 'antiwame':
-				if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+				
 	        if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return sticAdmin(from)
 			if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -3128,7 +3466,7 @@ await alpha.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftex}
 					}
 					break
 				 case 'antilink':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 	        if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return sticAdmin(from)
 			if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -3157,7 +3495,7 @@ await alpha.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftex}
 					}
 					break
 					case 'antibug':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
           if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return sticAdmin(from)
 			if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -3182,7 +3520,7 @@ await alpha.sendMessage(from, btasu, MessageType.buttonsMessage, {quoted: ftex})
 					}
           break
 				case 'tinyurl':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 try {
 link = args[0]
 anu = await axios.get(`https://tinyurl.com/api-create.php?url=${link}`)
@@ -3193,7 +3531,7 @@ reply(`${e}`)
 }
 break
 case 'sharelock':
- if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+ 
 kntl = `${args.join(' ')}`
 nama = kntl.split("|")[0];
 impostor = kntl.split("|")[1];
@@ -3203,7 +3541,7 @@ address: impostor,
 jpegThumbnail: ofrply}, MessageType.liveLocation, {quoted:floc})
 break
 case 'tts':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					  try{
         if (args.length > 1) {
         const gtts = require('./lib/gtts')(args[0])
@@ -3242,7 +3580,7 @@ case 'tts':
 }
 break 
 				case 'demote':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 				if (!isGroup) return reply(mess.only.group)
 				if (!isGroupAdmins) return sticAdmin(from)
                    if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -3252,7 +3590,7 @@ break
 						reply('Admin Eliminado')
 						break
 					case 'promote':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return sticAdmin(from)
                    if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -3264,7 +3602,7 @@ break
 				case 'linkgrup':
 				case 'linkgroup':
 				case 'linkgc':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 				if (!isGroup) return reply(mess.only.group)
                    if (!isBotGroupAdmins) return sticNotAdmin(from)
 					linkgc = await alpha.groupInviteCode(from)
@@ -3274,7 +3612,7 @@ break
 					case 'resetlinkgc':
          case 'resetlinkgroup':
          case 'revoke':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
          if (!isGroup) return reply(mess.only.group)
          if (!isGroupAdmins) return sticAdmin(from)
                    if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -3338,7 +3676,7 @@ break
                 alpha.groupMakeAdmin(from, members_id)
                 break
 				case 'setnamegc':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return sticAdmin(from)
               if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -3347,7 +3685,7 @@ break
 					break					
 				case 'setdeskgc':
 				case 'setdescgc':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return sticAdmin(from)
                    if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -3502,7 +3840,7 @@ if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 				reply('Okey')
 				break
 				case 'tomp4':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					if (!isQuotedSticker) return reply('Responde al sticker')
                                         sticWait(from)
             if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
@@ -3517,7 +3855,7 @@ if (!isOwner && !mek.key.fromMe) return sticOwner(from)
             fs.unlinkSync(owgi)
             break
             case 'tomp3':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					alpha.updatePresence(from, Presence.composing)
 					if (!isQuotedVideo) return reply('Responde al video')
 					sticWait(from)
@@ -3533,7 +3871,7 @@ if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 					})
 					break
 				case 'juego':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
   if (args.length < 1) return reply('Elija tijeras / piedra / papel')
 					if (args[0] === 'tijeras' ) {
 					  gunting = [
@@ -3565,12 +3903,12 @@ if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 break
 		    case 'slot':
             case 'slots':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
             const somtoy = sotoy[Math.floor(Math.random() * sotoy.length)]
             alpha.sendMessage(from, `[  🎰 | SLOTS ]\n-----------------\n🍋 : 🍌 : 🍍\n${somtoy}<=====\n🍋 : 🍌 : 🍍\n[  🎰 | SLOTS ]\n\nDescripción : Si obtienes 3 de la misma fruta, significa que ganas\n\nEjemplo : 🍌 : 🍌 : 🍌<=====`, MessageType.text, { quoted: mek })
             break
 				case 'kontak':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 				if (!isGroup) return reply(mess.only.group)
 					argzu = arg.split('|')
 				if (!argzu) return reply(`Usar ${prefix}kontak @tag|nombre`)
@@ -3582,7 +3920,7 @@ break
 				}
 				break
 				case 'kontag':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 				if (!isGroup) return reply(mess.only.group)
 				if (!isGroupAdmins) return sticAdmin(from)
                 argzi = arg.split('|')
@@ -3595,14 +3933,14 @@ break
 				}
 				break
 				case 'getdeskgc':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 				if (!isGroup) return reply(mess.only.group)
 					anu = from
 			   metadete = await alpha.groupMetadata(anu)
 				alpha.sendMessage(from, metadete.desc, text, {quoted:mek})
 				  break
 					case 'getbio':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 	  var yy = mek.message.extendedTextMessage.contextInfo.participant
 var p = await alpha.getStatus(`${yy}`, MessageType.text)
 reply(p.status)
@@ -3611,14 +3949,14 @@ reply(mess.error.api)
 }
 break
                     case 'getname':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
         var ambl = mek.message.extendedTextMessage.contextInfo.participant
 const sname = alpha.contacts[ambl] != undefined ? alpha.contacts[ambl].notify = undefined ? PhoneNumber('+' + ambl.replace('@s.whatsapp.net', '')).getNumber('international') : alpha.contacts[ambl].notify || alpha.contacts[ambl].vname : PhoneNumber('+' + ambl.replace('@s.whatsapp.net', '')).getNumber('international')
 reply(sname)
 break
 				case 'getpict':
 				case 'getpic':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					if (!isGroup) return reply(mess.only.group)
             mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
             pictt = await alpha.getProfilePicture(mentioned)
@@ -3626,7 +3964,7 @@ break
             alpha.sendMessage(from, pict, image, {quoted: ftex})
             break
 				case 'chat':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 			if (args[0].startsWith('08')) return reply('Número de prefijo con 62')
             if (args[0].startsWith('+62')) return reply('Número de prefijo con 62')
 			if (args.length < 1) return reply(`Ejemplo ${prefix}chat 62xnxx|text`)
@@ -3637,19 +3975,19 @@ break
             reply(`Enviar chat con éxito:\n${org},@${nomor}`)
             break
 				case 'attp':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					if (!c) return reply(`y el texto?`)
 					atetepe = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURIComponent(c)}`)
 					alpha.sendMessage(from, atetepe, sticker, { quoted: mek })
 					break
                 case 'ttp':  
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              ñ
                     if (!c) return reply(`y el texto?`)
                     anu1 = await getBuffer(`https://api.xteam.xyz/ttp?file&text=${c}`)
                     alpha.sendMessage(from, anu1, image, {quoted: mek, caption : `${prefix}sticker`})
                     break
 				case 'semoji':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              l
 			if (args === 0) return reply('emoji?')   
 		   aku4 = args.join(' ')
            emoji.get(`${aku4}`).then(emoji => {
@@ -3658,14 +3996,14 @@ break
            })
     	   break
 				case 'tag':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 			if (args.length < 1) return reply(`Aquien deseas mencionar xd?`)
             var nomqm = `${body.slice(5)}@s.whatsapp.net`
 					tagq = `@${nomqm.split('@')[0]}` 
 					alpha.sendMessage(from, tagq, text, { quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, mentionedJid: [nomqm]}})
 			break
 			case 'tagme':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
                   var nomqm = mek.participant
 				    tagu = `@${nomqm.split('@s.whatsapp.net')[0]}`
 					alpha.sendMessage(from, tagu, text, { quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, mentionedJid: [nomqm]}})
@@ -3674,7 +4012,7 @@ break
               reply('link del grupo?')
               break
 				case 'totag':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              ñ
 			if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return sticAdmin(from)
             if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
@@ -3790,7 +4128,7 @@ break
         break
 case 'status':
 case 'estado':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 				var groups = alpha.chats.array.filter(v => v.jid.endsWith('g.us'))
 				var privat = alpha.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
 				var ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -3853,7 +4191,7 @@ break
 							}
 					break
 					case 'fdeface':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 var nn = body.slice(9)
                                 var urlnye = nn.split("|")[0];
                                 var titlenye = nn.split("|")[1];
@@ -3898,7 +4236,7 @@ var nn = body.slice(9)
                 mentions(ht, members_id, false)
                 break
             case 'fitnah':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
             if (!isGroup) return reply(mess.only.group)
                 cr = body.slice(4)
                 cs = cr.split('|')
@@ -3916,7 +4254,7 @@ var nn = body.slice(9)
 				alpha.sendMessage(from, cs[2], MessageType.text, target)
 				break
               case 'hacked':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              ñ
               if (!isGroup) return reply(mess.only.group)
               if (!isGroupAdmins) return sticAdmin(from)
               if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -4188,7 +4526,7 @@ break
 						break
 
 						case 'ytsearch':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
             if (!args.length) return reply('¿y el texto?')
             try {
             	sticWait(from)
@@ -4297,7 +4635,7 @@ break
 				case 'sticker':
 					case 'stiker':
 					case 's':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              ñ
 						if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 							const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 							const media = await alpha.downloadAndSaveMediaMessage(encmedia, `./sticker/${sender}`)
@@ -4390,7 +4728,7 @@ quoted: mek, caption: `Nombre : ${nimek.Name}`
 break
 					case 'stickerwm':
 					case 'swm':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              l
 						if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 							ppp = `${args.join(' ')}`
 							const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -4460,7 +4798,7 @@ break
 						break
 					case 'takestick':
 					case 'take':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 						if (!isQuotedSticker) return reply(`Responde al sticker *${prefix}takestick nombre|autor*`)
 						ppp = `${args.join(' ')}`
 						const encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -4477,7 +4815,7 @@ break
 						break
 			case 'speed':
 			case 'ping':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					const timestampi = speed();
 					const latensyi = speed() - timestampi
 					reply(`Velocidad: ${latensyi.toFixed(4)} Second`)
@@ -4489,7 +4827,7 @@ break
                  break
                  case 'toimg':
 				case 'tomedia':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					if (!isQuotedSticker) return reply('Responde el sticker')
 					if (mek.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.isAnimated === true){
 						const encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -4514,7 +4852,7 @@ break
 					}
 					break
 				case 'ss':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              l
               sticWait(from)
 					sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/ssweb?url=${args[0]}&apikey=${HunterApi}`)
 					break
@@ -4546,7 +4884,7 @@ break
 					break
 				case 'stickerlist':
 				case 'liststicker':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					teks = '*Sticker List :*\n\n'
 					for (let awokwkwk of setik) {
 						teks += `- ${awokwkwk}\n`
@@ -4581,7 +4919,7 @@ break
 					break
 				case 'vnlist':
 				case 'listvn':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 					teks = '*VN List :*\n\n'
 					for (let awokwkwk of vien) {
 						teks += `- ${awokwkwk}\n`
@@ -4616,7 +4954,7 @@ break
 					break
 					case 'imagelist':
 				case 'listimage':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              ñ
 					teks = '*Image List :*\n\n'
 					for (let awokwkwk of imagi) {
 						teks += `- ${awokwkwk}\n`
@@ -4625,7 +4963,7 @@ break
 					alpha.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": imagi } })
 					break
 				case 'sticktag':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 				if (!isGroup) return reply(mess.only.group)
 				anu  = body.slice(10)
 				wanu = anu.split('|')
@@ -4639,7 +4977,7 @@ break
 				alpha.sendMessage(`${wanu[0]}`, result, sticker, { contextInfo: { "mentionedJid": mem }})
 				break
 			case 'runtime':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 				runtime = process.uptime()
 				reply(`Runtime : ${waktu(runtime)}`)
 				break
@@ -4665,7 +5003,7 @@ reply(`error`)
 break
                     case 'creategroup':
 			case 'creategrup':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 			if (!isGroup) return reply(mess.only.group)
 				if (args.length < 1) return reply(`Ejemplo ${prefix}creategrup nombre|@tag miembros`)
 				argz = arg.split('|')
@@ -4680,7 +5018,7 @@ break
                 }
 				break
             case 'welcome': 
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              
 	        if (!isGroup) return reply(mess.only.group)
 			if (!isOwner && !isGroupAdmins) return sticAdmin(from)
 					if (args[0] === 'on') {
@@ -4722,7 +5060,7 @@ await alpha.sendMessage(from, btngrass, MessageType.buttonsMessage, {quoted: fte
 				reply(`Exito respuesta eliminada ${body.slice(11)}`)
 				break
 				case 'listrespon':
-              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+            
 teks = `\`\`\`「 LIST RESPON  」\`\`\`\n\n`
 for (let i = 0; i < commandsDB.length; i ++){
 teks += `❏ *Preguntar:* ${commandsDB[i].pesan}\n`
